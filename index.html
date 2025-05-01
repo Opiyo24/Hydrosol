@@ -87,12 +87,12 @@
         </div>
       </header>
 
-      <section id="home" class="h-[80vh] xl:h-[100vh] w-full flex">
+      <section id="home" class="h-[80vh] md:h-[65vh] xl:h-[100vh] w-full flex">
         <div class="block md:hidden w-[100%]">
           <div class="flex flex-col h-full rounded-lg shadow-md backdrop-blur-2xl">
-              <div class="flex-1 w-full bg-cover bg-center" style="background-image: url('./images/big_windmill_bg.png'); filter: brightness(1); height: 50%;">
-                <div class="fixed bottom-0 my-[5%] flex-1 w-full backdrop-blur-2xl py-[2%]">
-                  <img src="./images/Hydrosol_logo_bg.png" alt="Hydrosol" class="w-auto h-[auto] max-w-full max-h-[150px] xl:max-h-[200px]">
+              <div class="flex-1 w-full  bg-cover bg-center" style="background-image: url('./images/big_windmill_bg.png'); filter: brightness(1); height: 50%;">
+                <div class="fixed bottom-0 my-[5%] flex-1 w-full backdrop-blur-2xl py-[2%] px-[2%]">
+                  <img src="./images/Hydrosol_logo_bg.png" alt="Hydrosol" class="w-auto h-[auto] max-w-full max-h-[50px] xl:max-h-[200px]">
                 <h2 class="font-semibold text-2xl lg:text-4xl xl:text-5xl text-blue-800 bold">
                     Systems Limited
                 </h2>
@@ -111,7 +111,7 @@
                         <h2 class="font-semibold text-2xl lg:text-4xl xl:text-5xl text-blue-600 bold">
                           Systems Limited
                         </h2>
-                        <p class="font-bold text-black text-lg ">Innovative water and energy solutions</p>
+                        <p class="font-bold text-black text-m ">Innovative water and energy solutions</p>
                         <p class="text-decoration-italics  underline font-mono">Since September 2022</p>
                       </div>
                       <div class="flex-1 w-[33%] bg-cover bg-center" style="background-image: url('./images/big_windmill_bg.png'); filter:brightness(1)"></div>
@@ -120,7 +120,7 @@
         </div>
     </section>
 
-    <section>
+    <section id="corporate_outlook">
       <div class="container mx-auto my-[10vh] w-full md:w-[80%]">
           <div class="grid grid-cols-1 md:grid-cols-3 gap-4 lg:gap-8 xl:gap-12">
             <div class="bg-white shadow-[0_4px_12px_-5px_rgba(0,0,0,0.4)] w-full max-w-sm rounded-lg overflow-hidden mx-auto">
@@ -177,9 +177,7 @@
         </div>
     </section>
 
-
-
-      <section class="w-[100%] h-30vh bg-gradient-to-r from-green-800 to-blue-700 flex items-center justify-center">
+      <section id="banner" class="w-[100%] h-30vh bg-gradient-to-r from-green-800 to-blue-700 flex items-center justify-center">
         <div class="w-[100%] h-[100%]">
           <div class="w-[100%] m:w-[80%] py-[5%] lg:py-[10%] text-center">
             <h1 class="text-2xl md:text-3xl lg:text-4xl font-bold italic text-white mb-4">for sustaibable water and energy solutions...</h1>
@@ -190,17 +188,17 @@
       <section class="bg-[url('./images/Hydrosol_image.png')] bg-cover bg-center bg-no-repeat w-full h-[80vh] md:h-[70vh] lg:h-[90vh] xl:h-[100vh] flex items-center justify-center">
         <div class="backdrop-blur-xl h-full w-full md:py-10 lg:py-5 lg:px-10">
             <div class="bg-[url('./images/Hydrosol_image.png')] bg-cover bg-center bg-no-repeat w-full h-full rounded-xl flex justify-center p-3">
-                <div class="w-2/3 rounded-xl">
-                    <h1 class="font-bold text-3xl lg:text-4xl text-blue-400">About Hydrosol</h1>
+                <div class="w-[50%] md:w-2/3 rounded-xl mt-[7%] md:mt-[5%]">
+                    <h1 class="font-bold text-2xl md:text-3xl lg:text-4xl text-blue-400">About Hydrosol</h1>
                     <div class="h-1 w-4/5 bg-green-700"></div>
                 </div>
-                <div class="w-1/3 flex flex-col">
+                <div class="w-[50%] m:w-1/3 flex flex-col">
                     <div class="h-1/2 w-full"></div>
                     <div class="h-1/2 w-full backdrop-blur-lg rounded-lg brightness-90 p-3 flex items-center justify-center">
-                        <p class="text-white text-sm lg:text-xl xl:text-2xl mb-10 lg:mb-20">
+                        <p class="text-white text-m lg:text-xl xl:text-2xl mb-10 lg:mb-20">
                             ...a leading engineering firm in innovative water and energy solutions dedicated to creating sustainable, efficient, and cutting-edge systems that address the world's growing demand for clean water and...
-                            <br>
-                            <a href="#" class="text-green-400 font-bold text-lg">learn more</a>
+                            <br><br>
+                            <a href="#" class="text-blue-400 font-bold text-lg">learn more</a>
                         </p>
                     </div>
                 </div>
@@ -208,10 +206,10 @@
         </div>
     </section>
 
-      <section class="">
+      <section id="services" class="">
         <div class="container mx-auto p-4">
 
-          <h2 class="text-2xl font-bold text-center mb-6">Our Services</h2>
+          <h2 class="text-2xl font-bold text-center my-6 md:my-[5%]">Our Services</h2>
       
           <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
       
@@ -294,14 +292,11 @@
                   <p class="text-gray-700">Help with creating strategies for reducing environmental impact, adopting renewable resources, and meeting long-term sustainability goals.</p>
       
               </div>
-      
-          <div class="text-center mt-6">
-      
-              <a href="/services" class="bg-green-500 text-white py-2 px-4 rounded hover:bg-green-600 transition">View All Services</a>
-      
+        </div>
+          <div class="text-center mt-6 w-full">
+            <a href="/services" class="bg-green-500 text-white py-2 px-4 rounded hover:bg-green-600 transition">View All Services</a>
+
           </div>
-      
-      </div>
       </section>
 
       <section id="contact" class="relative w-[100%] py-10 lg:py-20 xl:py-[10%] bg-cover bg-center" style="background-image: url('./images/banner_1.png'); ">
