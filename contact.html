@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact Us - Modern Tailwind Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Custom scrollbar for map container if needed */
+    #map-container iframe {
+      border-radius: 0.5rem;
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-r from-indigo-50 via-white to-indigo-50 min-h-screen flex flex-col items-center justify-center ">
+  <header class="fixed top-0 flex shadow-[0px_4px_16px_rgba(17,_17,_26,_0.1),_0px_8px_32px_rgba(17,_17,_26,_0.05)] py-4 px-4 sm:px-6 bg-white min-h-[75px] tracking-wide relative z-50 w-[100%] m:w-[80%]">
+    <div class="flex flex-wrap items-center gap-5 w-full max-w-screen-xl mx-auto">
+      <a href="javascript:void(0)"><img src="./images/Hydrosol_logo.png" alt="logo"
+        class="w-36" />
+      </a>
+
+      <div id="collapseMenu"
+        class="max-lg:hidden lg:!flex lg:ml-auto max-lg:before:fixed max-lg:before:bg-black max-lg:before:opacity-50 max-lg:before:inset-0 max-lg:before:z-50">
+        <button id="toggleClose" class="lg:hidden fixed top-2 right-4 z-[100] rounded-full bg-white w-9 h-9 flex items-center justify-center border">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5 fill-black" viewBox="0 0 320.591 320.591">
+            <path
+              d="M30.391 318.583a30.37 30.37 0 0 1-21.56-7.288c-11.774-11.844-11.774-30.973 0-42.817L266.643 10.665c12.246-11.459 31.462-10.822 42.921 1.424 10.362 11.074 10.966 28.095 1.414 39.875L51.647 311.295a30.366 30.366 0 0 1-21.256 7.288z"
+              data-original="#000000"></path>
+            <path
+              d="M287.9 318.583a30.37 30.37 0 0 1-21.257-8.806L8.83 51.963C-2.078 39.225-.595 20.055 12.143 9.146c11.369-9.736 28.136-9.736 39.504 0l259.331 257.813c12.243 11.462 12.876 30.679 1.414 42.922-.456.487-.927.958-1.414 1.414a30.368 30.368 0 0 1-23.078 7.288z"
+              data-original="#000000"></path>
+          </svg>
+        </button>
+
+        <ul
+          class="lg:flex gap-4 max-lg:space-y-3 max-lg:fixed max-lg:bg-white max-lg:w-1/2 max-lg:min-w-[300px] max-lg:top-0 max-lg:left-0 max-lg:p-6 max-lg:h-full max-lg:shadow-md max-lg:overflow-auto z-50">
+          <li class="mb-6 hidden max-lg:block">
+            <a href="javascript:void(0)"><img src="./images/Hydrosol_logo.png" alt="logo" class="w-40" />
+            </a>
+          </li>
+          <li class="max-lg:border-b max-lg:py-3 px-3">
+            <a href='javascript:void(0)'
+              class="hover:text-green-700 hover:text-[18px] hover:font-bold text-blue-700 font-medium block hover:underline  text-[15px]">Home</a>
+          </li>
+          <li class="max-lg:border-b max-lg:py-3 px-3"><a href='javascript:void(0)'
+            class="hover:text-green-700 hover:text-[18px] hover:underline  hover:font-bold text-slate-900 font-medium block text-[15px]">About</a>
+          </li>
+          <li class="max-lg:border-b max-lg:py-3 px-3"><a href='javascript:void(0)'
+            class="hover:text-green-700 hover:text-[18px] hover:font-bold hover:underline text-slate-900 font-medium block text-[15px]">Services</a>
+          </li>
+          <li class="max-lg:border-b max-lg:py-3 px-3"><a href='./contact.html'
+            class="hover:text-green-700 hover:text-[18px] hover:font-bold hover:underline text-slate-900 font-medium block text-[15px]">Contacts</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="flex items-center max-lg:ml-auto space-x-4">
+        <button
+          class="px-4 py-2 text-[15px] rounded font-medium text-white bg-blue-600 hover:bg-green-700 hover:text-[18px] hover:font-bold">Reach
+          out</button>
+
+        <button id="toggleOpen" class="lg:hidden">
+          <svg class="w-7 h-7" fill="#333" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+  <main class="max-w-5xl w-full bg-white rounded-xl shadow-lg overflow-hidden grid grid-cols-1 md:grid-cols-2 gap-8 p-4 mt-10">
+    <section class="flex flex-col justify-center space-y-6 mb-5">
+      <h1 class="text-4xl font-extrabold text-black tracking-wide">Contact Us</h1>
+      <p class="text-black text-lg max-w-md">
+        We would love to hear from you! Fill out the form below, and we will get back to you as soon as possible.
+      </p>
+      <form class="space-y-5" action="#" method="POST">
+        <div>
+          <label for="name" class="block text-black font-semibold mb-1">Name <span class="text-red-500">*</span></label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            placeholder="Your full name"
+            class="w-full rounded-md border border-blue-400 px-4 py-3 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition"
+          />
+        </div>
+        <div>
+          <label for="email" class="block text-black font-semibold mb-1">Email <span class="text-red-500">*</span></label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            placeholder="you@example.com"
+            class="w-full rounded-md border border-blue-400 px-4 py-3 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition"
+          />
+        </div>
+        <div>
+          <label for="subject" class="block text-black font-semibold mb-1">Subject</label>
+          <input
+            type="text"
+            id="subject"
+            name="subject"
+            placeholder="Subject of your message"
+            class="w-full rounded-md border border-blue-400 px-4 py-3 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition"
+          />
+        </div>
+        <div>
+          <label for="message" class="block text-black font-semibold mb-1">Message <span class="text-red-500">*</span></label>
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            required
+            placeholder="Your message here..."
+            class="w-full rounded-md border border-blue-400 px-4 py-3 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition resize-none"
+          ></textarea>
+        </div>
+        <button
+          type="submit"
+          class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 rounded-md shadow-lg transition focus:outline-none focus:ring-4 focus:ring-blue-400"
+        >
+          Send Message
+        </button>
+      </form>
+      <div class="mt-6 contact-details">
+        <h3 class="text-xl font-semibold text-black">Our Contact Details</h3>
+        <p><strong>Address:</strong> 7th Floor, Block 1, Eden Square Complex, Chiromo Road, Westlands, Nairobi</p>
+        <p><strong>Phone:</strong> +254 (0) 20 3673000</p>
+        <p><strong>Phone:</strong> +254 723 600 500</p>
+        <p><strong>Email:</strong> info@fabtechkenya.com</p>
+        <p><strong>Email:</strong> ncbainsurance@ncbagroup.com</p>
+      </div>
+      <p class="text-blue-500 text-sm mt-4 italic max-w-sm">
+        We respect your privacy and will never share your information.
+      </p>
+    </section>
+
+    <section id="map-container" class="rounded-xl shadow-lg overflow-hidden h-96 md:h-auto">
+      <iframe
+        title="Our Location"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.815389195938!2d36.8031381747583!3d-1.2648480358388796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f17394b74b353%3A0x4917ca499444a812!2sEden%20Square%2C%20Nairobi!5e0!3m2!1sen!2ske!4v1714674086417!5m2!1sen!2ske"
+        width="100%"
+        height="100%"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </section>
+  </main>
+
+  <footer class="bg-gradient-to-r from-green-800 to-blue-700 mt-6 pt-6 pb-6 px-10 tracking-wide w-[100%] m:w-[80%]">
+    <div class="max-w-screen-xl mx-auto">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="lg:flex lg:items-center">
+          <a href="javascript:void(0)">
+            <img src="./images/hydrosol_bg.png" alt="logo" class="w-48" />
+          </a>
+        </div>
+
+        <div class="lg:flex lg:items-center">
+          <ul class="flex space-x-6">
+            <li>
+              <a href="javascript:void(0)">
+                <svg xmlns="http://www.w3.org/2000/svg" class="fill-gray-300 hover:fill-white w-7 h-7" viewBox="0 0 24 24">
+                  <path fill-rule="evenodd"
+                    d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h7v-7h-2v-3h2V8.5A3.5 3.5 0 0 1 15.5 5H18v3h-2a1 1 0 0 0-1 1v2h3v3h-3v7h4a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2z"
+                    clip-rule="evenodd" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">
+                <svg xmlns="http://www.w3.org/2000/svg" class="fill-gray-300 hover:fill-white w-7 h-7" viewBox="0 0 24 24">
+                  <path fill-rule="evenodd"
+                    d="M21 5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5zm-2.5 8.2v5.3h-2.79v-4.93a1.4 1.4 0 0 0-1.4-1.4c-.77 0-1.39.63-1.39 1.4v4.93h-2.79v-8.37h2.79v1.11c.48-.78 1.47-1.3 2.32-1.3 1.8 0 3.26 1.46 3.26 3.26zM6.88 8.56a1.686 1.686 0 0 0 0-3.37 1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68zm1.39 1.57v8.37H5.5v-8.37h2.77z"
+                    clip-rule="evenodd" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" class="fill-gray-300 hover:fill-white w-7 h-7"
+                  viewBox="0 0 24 24">
+                  <path
+                    d="M22.92 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.83 4.5 17.72 4 16.46 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98-3.56-.18-6.73-1.89-8.84-4.48-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.9 20.29 6.16 21 8.58 21c7.88 0 12.21-6.54 12.21-12.21 0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-am mb-3 text-white font-bold underline">Useful links</h4>
+          <ul class="space-y-1 pl-2">
+            <li>
+              <a href="javascript:void(0)" class="text-white hover:underline text-sm">Home</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)" class="text-white hover:underline text-sm">About</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)" class="text-white hover:underline text-sm">Services</a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-am mb-3 text-white font-bold underline">Information</h4>
+          <ul class="space-y-1 pl-2">
+            <li>
+              <a href="javascript:void(0)" class="text-white hover:underline text-sm">About Us</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)" class="text-white hover:underline text-sm">Location &amp; Address</Address></a>
+            </li>
+            <li>
+              <a href="javascript:void(0)" class="text-white hover:underline text-sm">Contact Info</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="text-black text-sm mt-10 text-center">© Hydrosol Systems Limited.
+      </p>
+    </div>
+  </footer>
+      
+</body>
+</html>
