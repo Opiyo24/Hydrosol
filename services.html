@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - [Your Company Name]</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-b3/css/all.min.css">
+    <style>
+        /* Custom styles can be added here if needed */
+        .learn-more {
+            @apply inline-flex items-center font-semibold text-green-500 hover:text-green-700 transition duration-300;
+        }
+        .learn-more i {
+            @apply ml-2 text-sm;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans">
+    <header class="fixed top-0 flex shadow-[0px_4px_16px_rgba(17,_17,_26,_0.1),_0px_8px_32px_rgba(17,_17,_26,_0.05)] py-4 px-4 sm:px-6 bg-white min-h-[75px] tracking-wide relative z-50 w-[100%] m:w-[80%]">
+        <div class="flex flex-wrap items-center gap-5 w-full max-w-screen-xl mx-auto">
+          <a href="javascript:void(0)"><img src="./images/Hydrosol_logo.png" alt="logo"
+            class="w-36" />
+          </a>
+  
+          <div id="collapseMenu"
+            class="max-lg:hidden lg:!flex lg:ml-auto max-lg:before:fixed max-lg:before:bg-black max-lg:before:opacity-50 max-lg:before:inset-0 max-lg:before:z-50">
+            <button id="toggleClose" class="lg:hidden fixed top-2 right-4 z-[100] rounded-full bg-white w-9 h-9 flex items-center justify-center border">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5 fill-black" viewBox="0 0 320.591 320.591">
+                <path
+                  d="M30.391 318.583a30.37 30.37 0 0 1-21.56-7.288c-11.774-11.844-11.774-30.973 0-42.817L266.643 10.665c12.246-11.459 31.462-10.822 42.921 1.424 10.362 11.074 10.966 28.095 1.414 39.875L51.647 311.295a30.366 30.366 0 0 1-21.256 7.288z"
+                  data-original="#000000"></path>
+                <path
+                  d="M287.9 318.583a30.37 30.37 0 0 1-21.257-8.806L8.83 51.963C-2.078 39.225-.595 20.055 12.143 9.146c11.369-9.736 28.136-9.736 39.504 0l259.331 257.813c12.243 11.462 12.876 30.679 1.414 42.922-.456.487-.927.958-1.414 1.414a30.368 30.368 0 0 1-23.078 7.288z"
+                  data-original="#000000"></path>
+              </svg>
+            </button>
+  
+            <ul
+              class="lg:flex gap-4 max-lg:space-y-3 max-lg:fixed max-lg:bg-white max-lg:w-1/2 max-lg:min-w-[300px] max-lg:top-0 max-lg:left-0 max-lg:p-6 max-lg:h-full max-lg:shadow-md max-lg:overflow-auto z-50">
+              <li class="mb-6 hidden max-lg:block">
+                <a href="javascript:void(0)"><img src="./images/Hydrosol_logo.png" alt="logo" class="w-40" />
+                </a>
+              </li>
+              <li class="max-lg:border-b max-lg:py-3 px-3">
+                <a href='./index.html'
+                  class="hover:text-green-700 hover:text-[18px] hover:font-bold text-blue-700 font-medium block hover:underline  text-[15px]">Home</a>
+              </li>
+              <li class="max-lg:border-b max-lg:py-3 px-3"><a href='./about.html'
+                class="hover:text-green-700 hover:text-[18px] hover:underline  hover:font-bold text-slate-900 font-medium block text-[15px]">About</a>
+              </li>
+              <li class="max-lg:border-b max-lg:py-3 px-3"><a href='./services.html'
+                class="hover:text-green-700 hover:text-[18px] hover:font-bold hover:underline text-slate-900 font-medium block text-[15px]">Services</a>
+              </li>
+              <li class="max-lg:border-b max-lg:py-3 px-3"><a href='./contact.html'
+                class="hover:text-green-700 hover:text-[18px] hover:font-bold hover:underline text-slate-900 font-medium block text-[15px]">Contacts</a>
+              </li>
+            </ul>
+          </div>
+  
+          <div class="flex items-center max-lg:ml-auto space-x-4">
+            <button href="./contact.html"
+              class="px-4 py-2 text-[15px] rounded font-medium text-white bg-blue-600 hover:bg-green-700 hover:text-[18px] hover:font-bold">Reach
+              out</button>
+  
+            <button id="toggleOpen" class="lg:hidden">
+              <svg class="w-7 h-7" fill="#333" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                  clip-rule="evenodd"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </header>
+
+    <section class="bg-gradient-to-br from-blue-100 to-teal-100 py-20">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-3xl md:text-5xl font-bold text-teal-700 mb-6">For Sustainable WAter and Energy Solutions</h1>
+            <!-- <p class="text-lg text-gray-600">Explore our comprehensive services in renewable energy and water conservation.</p> -->
+        </div>
+    </section>
+
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl md:text-3xl font-semibold text-green-700 text-center mb-8">Our Services</h2>
+            <p class="text-gray-600 text-center mb-10">We offer a wide range of services designed to help embrace sustainable practices and contribute to a greener future.</p>
+            <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+      
+                <!-- Service Box 1 -->
+                <div class="border-2 border-green-500 p-4 rounded-lg transition-transform transform hover:scale-105">
+                    <h3 class="text-lg font-semibold">Energy Management Systems (EMS)</h3>
+                    <p class="text-gray-700">Software platforms to optimize energy use, improve efficiency, and manage consumption in real-time.</p>
+                </div>
+                <!-- Service Box 2 -->
+                <div class="border-2 border-blue-500 p-4 rounded-lg transition-transform transform hover:scale-105">
+                    <h3 class="text-lg font-semibold">Smart Grid Technology</h3>
+                    <p class="text-gray-700">Advanced grid management systems the improve the reliability, efficiency and sustainability of energy distribution.</p>
+                </div>
+        
+                <!-- Service Box 3 -->
+        
+                <div class="border-2 border-green-500 p-4 rounded-lg transition-transform transform hover:scale-105">
+                    <h3 class="text-lg font-semibold">Renewable Energy Solutions</h3>
+                    <p class="text-gray-700">Solar, wind, hydro amd geothermal energy systems to diversify power generation and reduce environmental impact.</p>
+                </div>
+        
+                <!-- Service Box 4 -->
+                <div class="border-2 border-blue-500 p-4 rounded-lg transition-transform transform hover:scale-105">
+                    <h3 class="text-lg font-semibold">Energy Storage Solutions</h3>
+                    <p class="text-gray-700">Battery storage technology (like lithium-ion) for storing excess energy produced during peak periods for later use.</p>
+                </div>
+        
+                <!-- Service Box 5 -->
+                <div class="border-2 border-green-500 p-4 rounded-lg transition-transform transform hover:scale-105">
+                    <h3 class="text-lg font-semibold">Energy Audits & Efficiency Consulting</h3>
+                    <p class="text-gray-700">Professional services that analyze energy use and suggest improvements to reduce consumption and lower costs.</p>
+                </div>
+        
+                <!-- Service Box 6 -->
+        
+                <div class="border-2 border-blue-500 p-4 rounded-lg transition-transform transform hover:scale-105">
+                    <h3 class="text-lg font-semibold">Demand Response Programs</h3>
+                    <p class="text-gray-700">Services that allow businesses and consumers to adjust their energy consumption in response to market signals, helping reduce grid congestion and stabilize energy prices.</p>
+                </div>
+        
+                <!-- Service Box 7 -->
+        
+                <div class="border-2 border-green-500 p-4 rounded-lg transition-transform transform hover:scale-105">
+                    <h3 class="text-lg font-semibold">Grid Modernization and Infrastructure Services</h3>
+                    <p class="text-gray-700">Upgrading or building energy infrastructure, such as substations, transmission lines, and distribution systems, for improved performance and longevity.</p>
+                </div>
+        
+                <!-- Service Box 8 -->
+        
+                <div class="border-2 border-blue-500 p-4 rounded-lg transition-transform transform hover:scale-105">
+                    <h3 class="text-lg font-semibold">Carbon Footprint Tracking and Reporting</h3>
+                    <p class="text-gray-700">Services that help monitor, report, and reduce carbon emissions, helping companies stay compliant with  environmental regulations and meet sustainability goals.</p>
+                </div>
+        
+                <!-- Service Box 9 -->
+        
+                <div class="border-2 border-green-500 p-4 rounded-lg transition-transform transform hover:scale-105">
+                    <h3 class="text-lg font-semibold">Energy Trading and Risk Management (ETRM) Software</h3>
+                    <p class="text-gray-700">Systems that help energy companies manage ﬁnancial risks, optimize energy trading portfolios, and improve decision-making.</p>
+                </div>
+        
+                <!-- Service Box 10 -->
+        
+                <div class="border-2 border-blue-500 p-4 rounded-lg transition-transform transform hover:scale-105">
+                    <h3 class="text-lg font-semibold">Data Analytics and Artiﬁcial Intelligence (AI)</h3>
+                    <p class="text-gray-700">Leveraging AI and machine learning for predictive maintenance, asset management, and operational optimization.</p>
+                </div>
+        
+                <!-- Service Box 11 -->
+        
+                <div class="border-2 border-green-500 p-4 rounded-lg transition-transform transform hover:scale-105">
+                    <h3 class="text-lg font-semibold">Regulatory Compliance Services</h3>
+                    <p class="text-gray-700">Assistance with ensuring that the company meets all local, national, and international energy regulations and standards.</p>
+                </div>
+        
+                <!-- Service Box 12 -->
+        
+                <div class="border-2 border-blue-500 p-4 rounded-lg transition-transform transform hover:scale-105">
+                    <h3 class="text-lg font-semibold">Sustainability Consulting</h3>
+                    <p class="text-gray-700">Help with creating strategies for reducing environmental impact, adopting renewable resources, and meeting long-term sustainability goals.</p>
+        
+                </div>
+
+                <!-- Service Box 13 -->
+        
+                <div class="border-2 border-green-500 p-4 rounded-lg transition-transform transform hover:scale-105">
+                    <h3 class="text-lg font-semibold">Training and Capacity Building</h3>
+                    <p class="text-gray-700">Technical training for water management professionals Capacity building for local communities and stakeholders Workshops on water conservation and sustainable practices.</p>
+                </div>
+        
+                <!-- Service Box 14 -->
+        
+                <div class="border-2 border-blue-500 p-4 rounded-lg transition-transform transform hover:scale-105">
+                    <h3 class="text-lg font-semibold">Consultancy and Advisory Services</h3>
+                    <p class="text-gray-700">Project feasibility studies and technical advice Policy and regulatory guidance for water-related projects Cost-beneﬁt analysis for water infrastructure projects Due diligence and risk assessment for water-related investments.</p>
+        
+                </div>
+
+                <!-- Service Box 15 -->
+        
+                <div class="border-2 border-green-500 p-4 rounded-lg transition-transform transform hover:scale-105">
+                    <h3 class="text-lg font-semibold">Climate Change Resilience and Adaptation</h3>
+                    <p class="text-gray-700">Climate risk assessments for water resources Climate adaptation strategies for water infrastructure Long-term planning for sustainable water and energy systems in changing climates.</p>
+                </div>
+        
+                <!-- Service Box 16 -->
+        
+                <div class="border-2 border-blue-500 p-4 rounded-lg transition-transform transform hover:scale-105">
+                    <h3 class="text-lg font-semibold">Flood Control and Management</h3>
+                    <p class="text-gray-700">Floodplain mapping and risk assessments, Flood mitigation planning and design. Flood control infrastructure (e.g., levees, dams, retention ponds).</p>
+        
+                </div>
+
+                <!-- Service Box 17 -->
+        
+                <div class="border-2 border-green-500 p-4 rounded-lg transition-transform transform hover:scale-105">
+                    <h3 class="text-lg font-semibold">Water and Energy Synergy Solutions</h3>
+                    <p class="text-gray-700">Integrated water and energy systems for efficiency. Hydropower and micro-hydropower solutions. Energy-efficient pumping systems and water treatment processes. Renewable energy integration for water infrastructure.</p>
+                </div>
+        
+                <!-- Service Box 18 -->
+        
+                <div class="border-2 border-blue-500 p-4 rounded-lg transition-transform transform hover:scale-105">
+                    <h3 class="text-lg font-semibold">Wastewater Treatment and Reuse</h3>
+                    <p class="text-gray-700">Design and implementation of wastewater
+                        treatment systems. Wastewater recycling and reuse strategies
+                        Sewer system design and optimization. Sludge management and disposal solutions.</p>
+        
+                </div>
+
+                <!-- Service Box 19 -->
+        
+                <div class="border-2 border-green-500 p-4 rounded-lg transition-transform transform hover:scale-105">
+                    <h3 class="text-lg font-semibold">Water Supply and Distribution Systems</h3>
+                    <p class="text-gray-700">Design and optimization of water supply networks Pumping station design and maintenance Distribution system modeling and analysis Pressure management and leak detection services.</p>
+        
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section class="bg-teal-100 py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-2xl md:text-3xl font-semibold text-teal-700 mb-6">Ready to Go Green?</h2>
+            <p class="text-lg text-gray-700 mb-8">Contact us today to discuss your renewable energy and water conservation needs.</p>
+            <a href="./contact.html" class="bg-green-700 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-full transition duration-300">Get a Consultation</a>
+        </div>
+    </section>
+
+    <footer class="bg-gradient-to-r from-green-800 to-blue-700 pt-6 pb-6 px-10 tracking-wide w-[100%] m:w-[80%]">
+        <div class="max-w-screen-xl mx-auto">
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="lg:flex lg:items-center">
+              <a href="javascript:void(0)">
+                <img src="./images/hydrosol_bg.png" alt="logo" class="w-48" />
+              </a>
+            </div>
+  
+            <div class="lg:flex lg:items-center">
+              <ul class="flex space-x-6">
+                <li>
+                  <a href="javascript:void(0)">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="fill-gray-300 hover:fill-white w-7 h-7" viewBox="0 0 24 24">
+                      <path fill-rule="evenodd"
+                        d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h7v-7h-2v-3h2V8.5A3.5 3.5 0 0 1 15.5 5H18v3h-2a1 1 0 0 0-1 1v2h3v3h-3v7h4a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2z"
+                        clip-rule="evenodd" />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="fill-gray-300 hover:fill-white w-7 h-7" viewBox="0 0 24 24">
+                      <path fill-rule="evenodd"
+                        d="M21 5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5zm-2.5 8.2v5.3h-2.79v-4.93a1.4 1.4 0 0 0-1.4-1.4c-.77 0-1.39.63-1.39 1.4v4.93h-2.79v-8.37h2.79v1.11c.48-.78 1.47-1.3 2.32-1.3 1.8 0 3.26 1.46 3.26 3.26zM6.88 8.56a1.686 1.686 0 0 0 0-3.37 1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68zm1.39 1.57v8.37H5.5v-8.37h2.77z"
+                        clip-rule="evenodd" />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" class="fill-gray-300 hover:fill-white w-7 h-7"
+                      viewBox="0 0 24 24">
+                      <path
+                        d="M22.92 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.83 4.5 17.72 4 16.46 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98-3.56-.18-6.73-1.89-8.84-4.48-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.9 20.29 6.16 21 8.58 21c7.88 0 12.21-6.54 12.21-12.21 0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z" />
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+  
+            <div>
+              <h4 class="text-am mb-3 text-white font-bold underline">Useful links</h4>
+              <ul class="space-y-1 pl-2">
+                <li>
+                  <a href="./index.html" class="text-white hover:underline text-sm">Home</a>
+                </li>
+                <li>
+                  <a href="./about.html" class="text-white hover:underline text-sm">About</a>
+                </li>
+                <li>
+                  <a href="./services.html" class="text-white hover:underline text-sm">Services</a>
+                </li>
+              </ul>
+            </div>
+  
+            <div>
+              <h4 class="text-am mb-3 text-white font-bold underline">Information</h4>
+              <ul class="space-y-1 pl-2">
+                <li>
+                  <a href="./about.html" class="text-white hover:underline text-sm">About Us</a>
+                </li>
+                <li>
+                  <a href="./contact.html" class="text-white hover:underline text-sm">Location &amp; Address</Address></a>
+                </li>
+                <li>
+                  <a href="./contact.html" class="text-white hover:underline text-sm">Contact Info</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+  
+          <p class="text-black text-sm mt-10 text-center">© Hydrosol Systems Limited.
+          </p>
+        </div>
+      </footer>
+
+    <script>
+        // You can add JavaScript for interactive elements here if needed
+    </script>
+    <style>
+        .learn-more {
+            @apply inline-flex items-center font-semibold text-green-500 hover:text-green-700 transition duration-300;
+        }
+        .learn-more i {
+            @apply ml-2 text-sm;
+        }
+    </style>
+</body>
+</html>
