@@ -314,6 +314,22 @@
     <script>
         // You can add JavaScript for interactive elements here if needed
     </script>
+
+    <script>
+      var toggleOpen = document.getElementById('toggleOpen');
+      var toggleClose = document.getElementById('toggleClose');
+      var collapseMenu = document.getElementById('collapseMenu');
+
+      function handleClick() {
+          if (collapseMenu.style.display === 'block') {
+              collapseMenu.style.display = 'none';
+          } else {
+              collapseMenu.style.display = 'block';
+          }
+      }
+      toggleOpen.addEventListener('click', handleClick);
+      toggleClose.addEventListener('click', handleClick);
+  </script> 
     <style>
         .learn-more {
             @apply inline-flex items-center font-semibold text-green-500 hover:text-green-700 transition duration-300;

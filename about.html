@@ -126,7 +126,7 @@
             </div> -->
         </section>
 
-        <section class="text-center">
+        <!-- <section class="text-center">
             <h3 class="text-2xl font-semibold text-blue-700 mb-4">Meet Our Team</h3>
             <p class="text-gray-600 text-lg mb-8">
                 
@@ -151,7 +151,7 @@
                     <p class="text-gray-600 text-sm mt-2"></p>
                 </div>
             </div>
-        </section>
+        </section> -->
     </main>
 
     <footer class="bg-gradient-to-r from-green-800 to-blue-700 pt-6 pb-6 px-10 tracking-wide w-[100%] m:w-[80%]">
@@ -159,7 +159,7 @@
           <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             <div class="lg:flex lg:items-center">
               <a href="javascript:void(0)">
-                <img src="./images/Hydrosol_logo.png" alt="logo" class="w-48" />
+                <img src="./images/hydrosol_bg.png" alt="logo" class="w-48" />
               </a>
             </div>
   
@@ -231,7 +231,23 @@
         </div>
       </footer>
 
-    <script>
+      <script>
+        var toggleOpen = document.getElementById('toggleOpen');
+        var toggleClose = document.getElementById('toggleClose');
+        var collapseMenu = document.getElementById('collapseMenu');
+
+        function handleClick() {
+            if (collapseMenu.style.display === 'block') {
+                collapseMenu.style.display = 'none';
+            } else {
+                collapseMenu.style.display = 'block';
+            }
+        }
+        toggleOpen.addEventListener('click', handleClick);
+        toggleClose.addEventListener('click', handleClick);
+    </script> 
+    
+      <script>
         const mobileMenuButton = document.getElementById('mobile-menu-button');
         const mobileMenu = document.getElementById('mobile-menu');
 

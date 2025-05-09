@@ -129,11 +129,10 @@
       </form>
       <div class="mt-6 contact-details">
         <h3 class="text-xl font-semibold text-black">Our Contact Details</h3>
-        <p><strong>Address:</strong> 7th Floor, Block 1, Eden Square Complex, Chiromo Road, Westlands, Nairobi</p>
-        <p><strong>Phone:</strong> +254 (0) 20 3673000</p>
-        <p><strong>Phone:</strong> +254 723 600 500</p>
-        <p><strong>Email:</strong> info@fabtechkenya.com</p>
-        <p><strong>Email:</strong> ncbainsurance@ncbagroup.com</p>
+        <p><strong>Address:</strong> Eden Square, Westlands, Nairobi</p>
+        <p><strong>Phone:</strong> +254 729 235 021</p>
+        <p><strong>Email:</strong> info@hydrosol.co.ke</p>
+        <p><strong>Email:</strong> admin@hydrosolsystems.co.ke</p>
       </div>
       <p class="text-blue-500 text-sm mt-4 italic max-w-sm">
         We respect your privacy and will never share your information.
@@ -230,6 +229,21 @@
       </p>
     </div>
   </footer>
-      
+     
+  <script>
+    var toggleOpen = document.getElementById('toggleOpen');
+    var toggleClose = document.getElementById('toggleClose');
+    var collapseMenu = document.getElementById('collapseMenu');
+
+    function handleClick() {
+        if (collapseMenu.style.display === 'block') {
+            collapseMenu.style.display = 'none';
+        } else {
+            collapseMenu.style.display = 'block';
+        }
+    }
+    toggleOpen.addEventListener('click', handleClick);
+    toggleClose.addEventListener('click', handleClick);
+</script> 
 </body>
 </html>
